@@ -1,0 +1,28 @@
+{
+  "name": "mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RookAteMySSD/Hunt-Showdown-Loadout-Manager.git"
+  },
+  "author": "Ronin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RookAteMySSD/Hunt-Showdown-Loadout-Manager/issues"
+  },
+  "homepage": "https://github.com/RookAteMySSD/Hunt-Showdown-Loadout-Manager#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "babel": "^6.23.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3",
+    "webpack": "^5.67.0"
+  }
+}
