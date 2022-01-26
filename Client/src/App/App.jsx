@@ -8,16 +8,16 @@ export const App = () => {
   console.warn('Change admin to null for demo build')
   const [loadout, changeLoadout] = useState(
     {
-      firstWeapon: 'none',
-      secondWeapon: 'none',
-      firstTool: 'none',
-      secondTool: 'none',
-      thirdTool: 'none',
-      fourthTool: 'none',
-      firstConsumable: 'none',
-      secondConsumable: 'none',
-      thirdConsumable: 'none',
-      fourthConsumable: 'none',
+      firstWeapon: 'None',
+      secondWeapon: 'None',
+      firstTool: 'None',
+      secondTool: 'None',
+      thirdTool: 'None',
+      fourthTool: 'None',
+      firstConsumable: 'None',
+      secondConsumable: 'None',
+      thirdConsumable: 'None',
+      fourthConsumable: 'None',
   })
 
   if (name === null) {
