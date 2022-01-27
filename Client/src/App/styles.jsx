@@ -30,11 +30,23 @@ export const flexSetup = {
 export const mainBox = {
   border: '3px solid #5e0606',
   padding: '5px',
-  paddingLeft: '12.5%',
-  paddingRight: '12.5%',
+  paddingLeft: '5%',
+  paddingRight: '5%',
   margin: '5px',
   backgroundColor: '#211e1e',
-  color: '#5e0606'
+  color: '#5e0606',
+  flexGrow: 3,
+}
+
+export const listBox = {
+  border: '3px solid #5e0606',
+  padding: '5px',
+  paddingLeft: '5%',
+  paddingRight: '5%',
+  margin: '5px',
+  backgroundColor: '#211e1e',
+  color: '#5e0606',
+  flexGrow: 1
 }
 
 export const InputContainer = styled.input`
