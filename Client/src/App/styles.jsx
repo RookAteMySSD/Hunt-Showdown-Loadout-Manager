@@ -30,8 +30,8 @@ export const flexSetup = {
 export const mainBox = {
   border: '3px solid #5e0606',
   padding: '5px',
-  paddingLeft: '50px',
-  paddingRight: '50px',
+  paddingLeft: '12.5%',
+  paddingRight: '12.5%',
   margin: '5px',
   backgroundColor: '#211e1e',
   color: '#5e0606'
@@ -40,8 +40,6 @@ export const mainBox = {
 export const InputContainer = styled.input`
   padding: 0.5vw 1vw;
   margin-right: 1.5vw;
-  font-size: 1.5vh;
-  font-family: 'Lato', sans-serif;
   text-align: center;
   width: 10vw;
   background-color: #211e1e;

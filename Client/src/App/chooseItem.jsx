@@ -11,10 +11,7 @@ export const ChooseItem = ({weapon, type, loadout, changeLoadout, ucw}) => {
 
   return (
     <div>
-      {weapon}
-      <div>
         {lists[type].map((item) => <Item item={item} weapon={weapon} loadout={loadout} changeLoadout={changeLoadout} ucw={ucw}/>)}
-      </div>
     </div>
   )
 }
