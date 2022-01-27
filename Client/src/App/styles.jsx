@@ -16,8 +16,36 @@ export const popup_data = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  backgroundColor: '#FFF',
+  backgroundColor: '#2b2929',
   padding: '50px',
   zIndex: 1000,
   width: '50%'
 }
+
+export const flexSetup = {
+  display: 'flex',
+  justifyContent: 'center'
+}
+
+export const mainBox = {
+  border: '3px solid #5e0606',
+  padding: '5px',
+  paddingLeft: '50px',
+  paddingRight: '50px',
+  margin: '5px',
+  backgroundColor: '#211e1e',
+  color: '#5e0606'
+}
+
+export const InputContainer = styled.input`
+  padding: 0.5vw 1vw;
+  margin-right: 1.5vw;
+  font-size: 1.5vh;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 10vw;
+  background-color: #211e1e;
+  color: #FFF;
+  &:hover {
+    background-color: #5e0606
+  }`

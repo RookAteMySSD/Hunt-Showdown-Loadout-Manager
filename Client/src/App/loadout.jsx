@@ -2,8 +2,22 @@ import React, {useState, useEffect} from 'react'
 import {ChooseItem} from './chooseItem.jsx'
 import {popup_box, popup_data} from './styles.jsx'
 import {Weapons, Tools, Consumables} from '../Data.js'
+import {flexSetup, mainBox, InputContainer} from './styles.jsx'
 
-export const Loadout = ({loadout, changeLoadout}) => {
+export const Loadout = ({name}) => {
+  const [loadoutName, changeName] = useState('')
+  const [loadout, changeLoadout] = useState({
+    firstWeapon: 'None',
+    secondWeapon: 'None',
+    firstTool: 'None',
+    secondTool: 'None',
+    thirdTool: 'None',
+    fourthTool: 'None',
+    firstConsumable: 'None',
+    secondConsumable: 'None',
+    thirdConsumable: 'None',
+    fourthConsumable: 'None',
+  })
   const [changeWeapon, updateChangeWeapon] = useState(false)
   const [type, updateType] = useState(null)
 
@@ -13,14 +27,17 @@ export const Loadout = ({loadout, changeLoadout}) => {
   }
 
   return (
-    <div>
+    <div style={mainBox}>
       <div>
         {changeWeapon ?
         <div style={popup_box}>
           <div style={popup_data}>
-            <ChooseItem weapon={changeWeapon} type={type}/>
+            <ChooseItem weapon={changeWeapon} type={type} loadout={loadout} changeLoadout={changeLoadout} ucw={updateChangeWeapon}/>
           </div>
         </div> : ''}
+      </div>
+      <div>
+        <InputContainer placeholder='Loadout Name' onChange={(event) => {changeName(event.target.value)}}></InputContainer>
       </div>
       <div>
         <img src={Weapons[loadout.firstWeapon].img}  className='Weapon' id='firstWeapon' onClick={changeWep}></img>
