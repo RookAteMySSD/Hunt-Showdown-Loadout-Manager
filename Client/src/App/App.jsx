@@ -6,8 +6,7 @@ import {Loadout} from './loadout.jsx'
 import {flexSetup} from './styles.jsx'
 
 export const App = () => {
-  const [name, updateName] = useState('ADMIN')
-  console.warn('Change admin to null for demo build')
+  const [name, updateName] = useState(null)
   const [loadoutName, changeName] = useState('')
   const [loadout, changeLoadout] = useState({
     firstWeapon: 'None',
