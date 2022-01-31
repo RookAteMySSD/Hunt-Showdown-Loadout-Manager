@@ -16,7 +16,8 @@ app.get('/Loadouts', (req, res) => {
     .catch((error) => {console.log(error)})
 })
 app.get('/Loadouts/:loadout', (req, res) => {
-  Loadout.findOne({name: req.query.name, loadoutName: req.params.loadout})
+  Loadout.findOne({name: req.query.name, loadoutName: req.params.loadout},
+    'firstWeapon secondWeapon firstTool secondTool thirdTool fourthTool firstConsumable secondConsumable thirdConsumable fourthConsumable')
     .then((response) => {res.send(response)})
     .catch((error) => {console.log(error)})
 })

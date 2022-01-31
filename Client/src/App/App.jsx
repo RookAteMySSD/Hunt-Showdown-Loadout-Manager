@@ -46,7 +46,7 @@ export const App = () => {
   } else {
     return (
       <div style={flexSetup}>
-        <LoadoutList name={name}/>
+        <LoadoutList name={name} changeLoadout={changeLoadout} changeName={changeName}/>
         <Loadout loadoutName={loadoutName} changeName={changeName} loadout={loadout} changeLoadout={changeLoadout} save={save}/>
       </div>
     )
