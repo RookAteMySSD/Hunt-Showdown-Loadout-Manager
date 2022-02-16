@@ -59,3 +59,12 @@ export const InputContainer = styled.input`
   &:hover {
     background-color: #5e0606
   }`
+
+  export const backroundImg = {
+    zIndex: '-1',
+    maxHeight: '100%',
+    maxWidth: '100%',
+    top: '0px',
+    left: '0px',
+    position: 'fixed'
+  }
