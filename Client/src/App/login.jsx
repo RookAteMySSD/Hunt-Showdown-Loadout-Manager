@@ -16,8 +16,7 @@ export const Login = ({updateName}) => {
     <div>
       <img src={backround} style={backroundImg}></img>
       <form onSubmit={submit}>
-        <label>Username:</label>
-        <input name='name'></input>
+        <input name='name' placeholder='Username'></input>
         <button>Submit</button>
       </form>
     </div>
