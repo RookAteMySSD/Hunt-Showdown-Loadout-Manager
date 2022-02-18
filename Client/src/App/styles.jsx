@@ -28,36 +28,38 @@ export const flexSetup = {
 }
 
 export const mainBox = {
-  border: '3px solid #5e0606',
+  border: '3px solid #7f1b1d',
   padding: '5px',
   paddingLeft: '5%',
   paddingRight: '5%',
   margin: '5px',
   backgroundColor: '#211e1e',
-  color: '#5e0606',
+  color: '#7f1b1d',
   flexGrow: 3,
 }
 
 export const listBox = {
-  border: '3px solid #5e0606',
+  border: '3px solid #7f1b1d',
   padding: '5px',
   paddingLeft: '5%',
   paddingRight: '5%',
   margin: '5px',
   backgroundColor: '#211e1e',
-  color: '#5e0606',
+  color: '#7f1b1d',
   flexGrow: 1
 }
 
 export const InputContainer = styled.input`
+  font-family: 'Brygada 1918', serif;
   padding: 0.5vw 1vw;
   margin-right: 1.5vw;
   text-align: center;
   width: 10vw;
   background-color: #211e1e;
-  color: #FFF;
+  color: #7f1b1d;
   &:hover {
-    background-color: #5e0606
+    background-color: #7f1b1d;
+    color: #211e1e;
   }`
 
   export const backroundImg = {
