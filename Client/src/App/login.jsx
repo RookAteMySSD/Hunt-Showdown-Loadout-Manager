@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {backroundImg, InputContainer} from './styles.jsx'
+import {backroundImg, InputContainer, ButtonContainer} from './styles.jsx'
 
 export const Login = ({updateName}) => {
 
@@ -17,7 +17,7 @@ export const Login = ({updateName}) => {
       <img src={backround} style={backroundImg}></img>
       <form onSubmit={submit}>
         <InputContainer name='name' placeholder='Username'></InputContainer>
-        <button>Submit</button>
+        <ButtonContainer>Submit</ButtonContainer>
       </form>
     </div>
   )
