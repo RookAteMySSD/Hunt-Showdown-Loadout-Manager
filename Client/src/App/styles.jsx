@@ -1,6 +1,13 @@
 import react from 'react'
 import styled from 'styled-components';
 
+export const Header = styled.h1`
+  color: #7f1b1d;
+  padding: 10px;
+  margin: 3px;
+  display: inline-block;
+`
+
 export const flexSetup = {
   display: 'flex',
   justifyContent: 'center'
@@ -62,9 +69,10 @@ export const ButtonContainer = styled.button`
 
   export const backroundImg = {
     zIndex: '-1',
-    maxHeight: '100%',
-    maxWidth: '100%',
+    height: '100%',
+    width: '100%',
     top: '0px',
     left: '0px',
-    position: 'fixed'
+    position: 'fixed',
+    objectFit: 'cover',
   }

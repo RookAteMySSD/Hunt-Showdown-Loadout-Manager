@@ -3,7 +3,7 @@ import axios from 'axios'
 import {Login} from './login.jsx'
 import {LoadoutList} from './loadoutList.jsx'
 import {Loadout} from './loadout.jsx'
-import {flexSetup} from './styles.jsx'
+import {flexSetup, backroundImg} from './styles.jsx'
 
 export const App = () => {
   const [name, updateName] = useState(null)
@@ -39,13 +39,28 @@ export const App = () => {
       .catch((error) => {console.log(error)})
   }
 
+  const backroundArr = ['At gun point', 'Concept-Art-1',
+  'Hunt_E3_2017_screenshot_fire_1080p', 'Hunt_E3_2017_screenshot_light_1080p', 'Hunt_E3_2017_screenshot_sniper_1080p',
+  'Hunter becomes Hunted', 'Hunter in the fog', 'Hunters in the swamp', 'Hunters']
+  const [imageNum, setImageNum] = useState(0)
+  useEffect(() => {
+    const newNum = Math.floor(Math.random() * 9)
+    setImageNum(newNum)
+  }, [])
+  const background = `./img/Backround/${backroundArr[imageNum]}.jpg`
+
+
   if (name === null) {
     return (
-    <Login updateName={updateName}/>
+    <div>
+      <img src={background} style={backroundImg}></img>
+      <Login updateName={updateName}/>
+    </div>
     )
   } else {
     return (
       <div style={flexSetup}>
+        <img src={background} style={backroundImg}></img>
         <LoadoutList name={name} changeLoadout={changeLoadout} changeName={changeName}/>
         <Loadout loadoutName={loadoutName} changeName={changeName} loadout={loadout} changeLoadout={changeLoadout} save={save}/>
       </div>
