@@ -4,7 +4,7 @@ This is a program that allows users to design loadouts for the online PvP game [
 ### How to Run
 1. Use `npm install` to install dependencies
 2. Use `npm run build` to run webpack
-3. Use `npm start` to start the node server, by default this uses port 3000 (site) and port 27017 (databse)
+3. Use `npm start` to start the node server, by default this uses port 3000 (site) and port 27017 (database)
 4. Open http://localhost:3000/ in a browser
 ### Features
 1. Allows for multiple diffrent users without risk of conflict
@@ -24,4 +24,4 @@ This is a program that allows users to design loadouts for the online PvP game [
 ### Roadmap
 - [x] Add Backround
 - [ ] In depth weapon-stats
-- [ ] Better user authentication 
+- [ ] Better user authentication
