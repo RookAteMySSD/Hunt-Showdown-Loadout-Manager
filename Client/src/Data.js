@@ -38,6 +38,12 @@ export const Tools = {
   'Knife': {
     img: './img/Knife.jpg'
   },
+  'Heavy Knife': {
+    img: './img/Heavy-Knife.jpg'
+  },
+  'Knuckle Knife': {
+    img: './img/Knuckle-Knife.jpg'
+  },
   'Dusters': {
     img: './img/Dusters.jpg'
   },
@@ -47,8 +53,41 @@ export const Tools = {
   'Concertina Traps': {
     img: './img/Concertina.jpg'
   },
-  'Flares': {
+  'Alert Traps': {
+    img: './img/Alert.jpg'
+  },
+  'Posion Traps': {
+    img: './img/Poison-Mine.jpg'
+  },
+  'Decoy': {
+    img: './img/Decoy.jpg'
+  },
+  'Blank Fire Decoy': {
+    img: './img/Blank-Fire.jpg'
+  },
+  'Decoy Fuse': {
+    img: './img/Decoy-Fuse.jpg'
+  },
+  'Lamp': {
+    img: './img/Lamp.jpg'
+  },
+  'Fuses': {
+    img: './img/Fuse.jpg'
+  },
+  'Flare Gun': {
     img: './img/Flare.jpg'
+  },
+  'Throwing Knife': {
+    img: './img/Throwing-Knife.jpg'
+  },
+  'Throwing Axe': {
+    img: './img/Throwing-Axe.jpg'
+  },
+  'Derringer': {
+    img: './img/Derringer.jpg'
+  },
+  'Spyglass': {
+    img: './img/Spyglass.jpg'
   }
 }
 
