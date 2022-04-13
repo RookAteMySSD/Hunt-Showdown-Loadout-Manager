@@ -23,5 +23,6 @@ This is a program that allows users to design loadouts for the online PvP game [
   + Styled Components
 ### Roadmap
 - [x] Add Backround
+- [ ] Add More Weapons
 - [ ] In depth weapon-stats
 - [ ] Better user authentication
