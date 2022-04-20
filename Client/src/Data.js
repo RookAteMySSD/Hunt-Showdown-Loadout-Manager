@@ -98,22 +98,76 @@ export const Consumables = {
   'Dynamite': {
     img: './img/Dynamite.jpg'
   },
-  'Fire Bomb': {
-    img: './img/Fire.jpg'
+  'Waxed Dynamite': {
+    img: './img/Wax-Dynamite.jpg'
+  },
+  'Dynamite Bundle': {
+    img: './img/Dynamite-Bundle.jpg'
+  },
+  'Big Dynamite Bundle': {
+    img: './img/Dynamite-Bundle-Big.jpg'
   },
   'Frag': {
     img: './img/Frag.jpg'
   },
+  'Fire Bomb': {
+    img: './img/Fire.jpg'
+  },
+  'Liquid Fire Bomb': {
+    img: './img/Liquid-Fire.jpg'
+  },
+  'Hellfire Bomb': {
+    img: './img/HellFire.jpg'
+  },
   'Vitality': {
     img: './img/Vital.jpg'
   },
-  'Regen': {
+  'Weak Vitality': {
+    img: './img/Vital-Weak.jpg'
+  },
+  'Regeneration': {
     img: './img/Regen.jpg'
+  },
+  'Weak Regeneration': {
+    img: './img/Regen-Weak.jpg'
+  },
+  'Stamina': {
+    img: './img/Stam.jpg'
+  },
+  'Weak Stamina': {
+    img: './img/Stam-Weak.jpg'
+  },
+  'Antidote': {
+    img: './img/Antidote.jpg'
+  },
+  'Weak Antidote': {
+    img: './img/Antidote-Weak.jpg'
   },
   'Concertina Bomb': {
     img: './img/Concertina-Bomb.jpg'
   },
+  'Poison Bomb': {
+    img: './img/Poison.jpg'
+  },
+  'Hive Bomb': {
+    img: './img/Hive-Bomb.jpg'
+  },
+  'Flash Bomb': {
+    img: './img/Flash.jpg'
+  },
   'Sticky Bomb': {
     img: './img/Sticky.jpg'
-  }
+  },
+  'Chaos Bomb': {
+    img: './img/Chaos.jpg'
+  },
+  'Throwing Knife': {
+    img: './img/Throwing-Knife.jpg'
+  },
+  'Thorwing Axe': {
+    img: './img/Throwing-Axe.jpg'
+  },
+  'Ammo Box': {
+    img: './img/Ammo-Box.jpg'
+  },
 }
