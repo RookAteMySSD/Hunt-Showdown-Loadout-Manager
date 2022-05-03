@@ -5,11 +5,9 @@ import {flexSetup, mainBox, InputContainer, ButtonContainer} from './styles.jsx'
 
 export const Loadout = ({loadoutName, changeName, loadout, changeLoadout, save}) => {
   const [changeWeapon, updateChangeWeapon] = useState(false)
-  const [type, updateType] = useState(null)
 
   const changeWep = (event) => {
-    updateType(event.target.className)
-    updateChangeWeapon(event.target.id)
+    updateChangeWeapon([event.target.id, event.target.className])
   }
 
   return (
@@ -41,7 +39,7 @@ export const Loadout = ({loadoutName, changeName, loadout, changeLoadout, save})
         </div>
         <div>
           {changeWeapon ?
-              <ChooseItem weapon={changeWeapon} type={type} loadout={loadout} changeLoadout={changeLoadout} ucw={updateChangeWeapon}/> : ''}
+              <ChooseItem weapon={changeWeapon} loadout={loadout} changeLoadout={changeLoadout} ucw={updateChangeWeapon}/> : ''}
         </div>
       </div>
     </div>
