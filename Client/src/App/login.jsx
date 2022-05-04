@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Header, InputContainer, ButtonContainer} from './styles.jsx'
+import './styles.css'
 
 export const Login = ({updateName}) => {
 
@@ -10,7 +11,7 @@ export const Login = ({updateName}) => {
 
   return (
     <div style={{textAlign: 'center'}}>
-      <Header>Hunt Showdown Loadout Manager</Header>
+      <h1 className='Header'>Hunt Showdown Loadout Manager</h1>
       <form onSubmit={submit}>
         <InputContainer name='name' placeholder='Username'></InputContainer>
         <ButtonContainer>Submit</ButtonContainer>
