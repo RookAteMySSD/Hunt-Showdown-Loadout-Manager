@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import {flexSetup, listBox} from './styles.jsx'
+import './styles.css'
 
 export const LoadoutList = ({name, changeLoadout, changeName}) => {
   const [loadouts, updateLoadouts] = useState([])
@@ -19,7 +19,7 @@ export const LoadoutList = ({name, changeLoadout, changeName}) => {
   }
 
   return (
-    <div style={listBox}>
+    <div id='listBox'>
       {loadouts.map((loadout) => <div id={loadout.loadoutName} onClick={loadoutSelect}>{loadout.loadoutName}</div>)}
     </div>
   )

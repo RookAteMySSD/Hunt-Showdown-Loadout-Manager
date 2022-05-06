@@ -3,7 +3,6 @@ import axios from 'axios'
 import {Login} from './login.jsx'
 import {LoadoutList} from './loadoutList.jsx'
 import {Loadout} from './loadout.jsx'
-import {flexSetup, backroundImg} from './styles.jsx'
 import './styles.css'
 
 export const App = () => {
@@ -56,7 +55,7 @@ export const App = () => {
     )
   } else {
     return (
-      <div style={flexSetup}>
+      <div className='flexBasic'>
         <img src={background} id='backround'></img>
         <LoadoutList name={name} changeLoadout={changeLoadout} changeName={changeName}/>
         <Loadout loadoutName={loadoutName} changeName={changeName} loadout={loadout} changeLoadout={changeLoadout} save={save}/>
