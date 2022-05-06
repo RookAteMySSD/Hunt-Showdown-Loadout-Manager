@@ -17,15 +17,15 @@ export const Item = ({item, weapon, loadout, changeLoadout, ucw}) => {
     )
   } if (weapon[1] === 'Tool') {
     return (
-      <div>
+      <span>
         <img src={Tools[item].img} onClick={change}></img>
-      </div>
+      </span>
     )
   } if (weapon[1] === 'Consumable') {
     return (
-      <div>
+      <span>
         <img src={Consumables[item].img} onClick={change}></img>
-      </div>
+      </span>
     )
   }
 }
