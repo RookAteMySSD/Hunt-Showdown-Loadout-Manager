@@ -3,7 +3,7 @@ import {Item} from './item.jsx'
 import {Weapons, Tools, Consumables} from '../Data.js'
 import './styles.css'
 
-export const ChooseItem = ({weapon, loadout, changeLoadout, ucw}) => {
+export const ChooseItem = ({weapon, loadout, changeLoadout, updateChangeWeapon}) => {
   const lists = {
     Weapon: Object.keys(Weapons),
     Tool: Object.keys(Tools),
@@ -12,7 +12,7 @@ export const ChooseItem = ({weapon, loadout, changeLoadout, ucw}) => {
 
   return (
     <div className='list'>
-        {lists[weapon[1]].map((item) => <Item item={item} weapon={weapon} loadout={loadout} changeLoadout={changeLoadout} ucw={ucw}/>)}
+        {lists[weapon[1]].map((item) => <Item item={item} weapon={weapon} loadout={loadout} changeLoadout={changeLoadout} updateChangeWeapon={updateChangeWeapon}/>)}
     </div>
   )
 }

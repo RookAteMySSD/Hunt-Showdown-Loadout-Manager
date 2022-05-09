@@ -39,7 +39,8 @@ export const Loadout = ({loadoutName, changeName, loadout, changeLoadout, save})
         </div>
         <div>
           {changeWeapon ?
-              <ChooseItem weapon={changeWeapon} loadout={loadout} changeLoadout={changeLoadout} ucw={updateChangeWeapon}/> : ''}
+              <ChooseItem weapon={changeWeapon} loadout={loadout} changeLoadout={changeLoadout}
+              updateChangeWeapon={updateChangeWeapon}/> : ''}
         </div>
       </div>
     </div>
