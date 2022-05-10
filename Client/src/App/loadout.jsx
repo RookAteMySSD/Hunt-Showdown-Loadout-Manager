@@ -44,6 +44,5 @@ export const Loadout = ({loadoutName, changeName, loadout, changeLoadout, save})
         </div>
       </div>
     </div>
-
   )
 }
